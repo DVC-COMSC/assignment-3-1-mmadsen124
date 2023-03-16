@@ -2,19 +2,19 @@ def main():
     ##################################################
     # Comlete your code here
     ##################################################
-	import random 
-	
-	n1 = random.randint(0,100)
-	n2 = random.randint(0,100)
-	n3 = random.randint(0,100)
-	print (n1, n2, n3)
-	
-	if n1 < n2 and n1 < n3:
-		print (f'{n1} is the smallest number')
-	elif n2 < n1 and n2 < n3:
-		print (f'{n2} is the smallest number')
-	else:
-		print (f'{n3} is the smallest number')
+  import random
+  num1 = random.randint(0,100)
+  num2 = random.randint(0,100)
+  num3 = random.randint(0,100)
+
+  if (num1 <= num2) and (num1 <= num3):
+    smallest = num1
+  elif (num2 <= num1) and (num2 <= num3):
+    smallest = num2
+  else:
+    smallest = num3
+  print(num1,num2,num3)
+  print('The smallest number is: ',smallest)
 
 if __name__ == '__main__':
     main()
